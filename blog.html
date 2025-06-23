@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="styles/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/header-style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BookHaven</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="books.html"target="_self">Books</a></li>
+                    <li><a href="publishers.html"target="_self">Publishers</a></li>
+                    <li><a href="events.html"target="_self">Events</a></li>
+                    <li><a href="bookclub.html"target="_self">Book Club</a></li>
+                    <li><a href="blog.html" class="active" target="_self">Blog</a></li>
+                    <li><a href="contact.html"target="_self">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a class="nav-login" href="login.html" class="btn login-btn">Login</a>
+                <a class="nav-register" href="register.html" class="btn register-btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Content -->
+    <section class="blog-intro">
+        <div class="container">
+            <h2>📚 BookHaven Blog</h2>
+            <p>Welcome to our blog! Here we share book reviews, reading tips, author interviews, and much more. Dive into the world of literature with us!</p>
+        </div>
+    </section>
+
+    <section class="featured-post">
+        <div class="container">
+            <h3>⭐ Featured Post</h3>
+            <div class="post">
+                <img src="img/event1.jpg" alt="">
+                <h4>5 Books That Will Change the Way You Think</h4>
+                <p><em>Posted on May 18, 2025 by Admin</em></p>
+                <p>Books have the power to shift our perspectives. In this post, we explore five transformative reads that challenge conventional thinking and open new mental pathways...</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-posts">
+        <div class="container">
+            <h3>📝 Recent Posts</h3>
+            <div class="post-list">
+                <div class="post">
+                    <img src="img/event.jpg" alt="">
+                    <h4>Interview with Author Mira Sandoval</h4>
+                    <p><em>May 10, 2025</em></p>
+                    <p>We sat down with Mira Sandoval to talk about her latest bestseller and her journey as a modern storyteller.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="post">
+                    <img src="img/event3.jpg" alt="">
+                    <h4>Top 10 Must-Read Mystery Novels</h4>
+                    <p><em>May 2, 2025</em></p>
+                    <p>From Agatha Christie to Gillian Flynn, these gripping mystery novels will keep you turning pages all night.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="post">
+                    <img src="img/event4.jpg" alt="">
+                    <h4>Building a Reading Habit: Tips That Work</h4>
+                    <p><em>April 25, 2025</em></p>
+                    <p>Struggling to stay consistent with reading? Here are practical and fun tips to help make reading part of your daily routine.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>BookHaven</h3>
+                <p>Your ultimate destination for literature lovers. Discover, connect, and celebrate the joy of reading.</p>
+                <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="publishers.html">Publishers</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="bookclub.html">Book Club</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Language</h3>
+                <div class="language-select-wrapper">
+                    <select id="language-selector">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <strong>BookHaven</strong>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/header.js"></script>
+</body>
+</html>

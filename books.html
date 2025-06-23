@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Books - BookHaven</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/books.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/header-style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">BookHaven</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="books.html" target="_self">Books</a></li>
+                    <li><a href="publishers.html" target="_self">Publishers</a></li>
+                    <li><a href="events.html" target="_self">Events</a></li>
+                    <li><a href="bookclub.html" target="_self">Book Club</a></li>
+                    <li><a href="blog.html" target="_self">Blog</a></li>
+                    <li><a href="contact.html" target="_self">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a class="nav-login" href="login.html" class="btn login-btn">Login</a>
+                <a class="nav-register" href="register.html" class="btn register-btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="books-banner">
+        <div class="container">
+            <h1>Explore Our Collection</h1>
+            <div class="search-container">
+                <form id="book-search-form">
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Search by title, author, ISBN...">
+                        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="books-section">
+        <div class="container">
+            <div class="books-grid-container">
+                <aside class="filter-sidebar">
+                    <div class="filter-header">
+                        <h3>Filters</h3>
+                        <button id="clear-filters">Clear All</button>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Genre</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="genre" value="fiction">
+                                <span class="checkmark"></span>
+                                Fiction
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="genre" value="mystery">
+                                <span class="checkmark"></span>
+                                Mystery & Thriller
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="genre" value="scifi">
+                                <span class="checkmark"></span>
+                                Science Fiction
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="genre" value="fantasy">
+                                <span class="checkmark"></span>
+                                Fantasy
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="genre" value="romance">
+                                <span class="checkmark"></span>
+                                Romance
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="genre" value="nonfiction">
+                                <span class="checkmark"></span>
+                                Non-Fiction
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="genre" value="biography">
+                                <span class="checkmark"></span>
+                                Biography
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="genre" value="history">
+                                <span class="checkmark"></span>
+                                History
+                            </label>
+                        </div>
+                        <a href="#" class="view-more">View more</a>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <div class="price-range">
+                            <div class="range-slider">
+                                <input type="range" min="0" max="100" value="100" class="price-slider" id="price-slider">
+                            </div>
+                            <div class="range-values">
+                                <span>$0</span>
+                                <span id="price-value">$100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Customer Rating</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="radio" name="rating" value="4">
+                                <span class="radio-mark"></span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-text">& up</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="rating" value="3">
+                                <span class="radio-mark"></span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-text">& up</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="rating" value="2">
+                                <span class="radio-mark"></span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-text">& up</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="rating" value="1">
+                                <span class="radio-mark"></span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-text">& up</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Format</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="format" value="hardcover">
+                                <span class="checkmark"></span>
+                                Hardcover
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="format" value="paperback">
+                                <span class="checkmark"></span>
+                                Paperback
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="format" value="ebook">
+                                <span class="checkmark"></span>
+                                e-Book
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="format" value="audiobook">
+                                <span class="checkmark"></span>
+                                Audiobook
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Publisher</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="publisher" value="harbor">
+                                <span class="checkmark"></span>
+                                Harbor Press
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="publisher" value="penguin">
+                                <span class="checkmark"></span>
+                                Penguin Random House
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="publisher" value="harpercollins">
+                                <span class="checkmark"></span>
+                                HarperCollins
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="publisher" value="macmillan">
+                                <span class="checkmark"></span>
+                                Macmillan Publishers
+                            </label>
+                        </div>
+                        <a href="#" class="view-more">View more</a>
+                    </div>
+                    
+                    <button id="apply-filters" class="btn">Apply Filters</button>
+                </aside>
+                
+                <div class="books-content">
+                    <div class="books-header">
+                        <div class="results-count">
+                            <span id="results-count">108</span> results
+                        </div>
+                        <div class="sort-options">
+                            <label for="sort-by">Sort by:</label>
+                            <select id="sort-by">
+                                <option value="relevance">Relevance</option>
+                                <option value="popularity">Popularity</option>
+                                <option value="price_low">Price: Low to High</option>
+                                <option value="price_high">Price: High to Low</option>
+                                <option value="rating">Average Rating</option>
+                                <option value="newest">Publication Date</option>
+                            </select>
+                        </div>
+                        <div class="view-toggle">
+                            <button class="grid-view active"><i class="fas fa-th"></i></button>
+                            <button class="list-view"><i class="fas fa-list"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="books-grid" id="books-container">
+                        <!-- Books will be loaded here via JavaScript -->
+                    </div>
+                    
+                    <div class="pagination">
+                        <button class="pagination-btn prev" disabled><i class="fas fa-chevron-left"></i></button>
+                        <div class="page-numbers">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <span class="ellipsis">...</span>
+                            <a href="#">10</a>
+                        </div>
+                        <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with the latest releases, author interviews, and book recommendations.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>BookHaven</h3>
+                    <p>Your ultimate destination for literature enthusiasts. Discover, connect, and explore the world of books.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="publishers.html">Publishers</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="bookclub.html">Book Club</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Language</h3>
+                    <select id="language-selector">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/books.js"></script>
+    <script src="js/catalog.js"></script>
+<script src="js/header.js"></script>
+</body>
+</html>

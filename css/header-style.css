@@ -1,0 +1,104 @@
+
+
+/* Auth Section Styles */
+.nav-login, .nav-register, .nav-logout, .nav-welcome {
+    float: right;
+    margin-left: 10px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.nav-login, .nav-register {
+    background-color: #4e73df;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.nav-login:hover, .nav-register:hover {
+    background-color: #2e59d9;
+}
+
+.nav-logout {
+    background-color: #e74a3b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-logout:hover {
+    background-color: #c0392b;
+}
+
+.nav-welcome {
+    background-color: #1cc88a;
+    color: #fff;
+    display: inline-block;
+    line-height: 28px;
+}
+
+
+/* Improved Navigation Auth Section */
+.nav-auth-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.nav-login, .nav-register, .nav-logout, .nav-welcome {
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.nav-login, .nav-register {
+    background-color: #4e73df;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.nav-login:hover, .nav-register:hover {
+    background-color: #2e59d9;
+}
+
+.nav-logout {
+    background-color: #e74a3b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-logout:hover {
+    background-color: #c0392b;
+}
+
+.nav-welcome {
+    background-color: #1cc88a;
+    color: #fff;
+    display: inline-block;
+    line-height: 28px;
+}
+
+
+/* Force navbar to use flex to allow pushing auth items right */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Ensure auth container is fully right aligned */
+.nav-auth-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}

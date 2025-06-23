@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Downloads\\project\\New folder\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Downloads\\project\\New folder\\book-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:book-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Downloads\\project\\New folder\\books.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:books.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Downloads\\project\\New folder\\cart.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cart.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Downloads\\project\\New folder\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Downloads\\project\\New folder\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Downloads\\project\\New folder\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "requirements.txt",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\requirements.txt",
+              "RelativeDocumentMoniker": "requirements.txt",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\requirements.txt",
+              "RelativeToolTip": "requirements.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-20T16:04:44.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "book-details.html",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\book-details.html",
+              "RelativeDocumentMoniker": "book-details.html",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\book-details.html",
+              "RelativeToolTip": "book-details.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-20T16:01:27.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "books.html",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\books.html",
+              "RelativeDocumentMoniker": "books.html",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\books.html",
+              "RelativeToolTip": "books.html",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-20T16:01:22.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "register.html",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\register.html",
+              "RelativeDocumentMoniker": "register.html",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\register.html",
+              "RelativeToolTip": "register.html",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-20T16:01:07.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\login.html",
+              "RelativeDocumentMoniker": "login.html",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\login.html",
+              "RelativeToolTip": "login.html",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-20T16:01:02.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-20T15:10:47.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "cart.html",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\cart.html",
+              "RelativeDocumentMoniker": "cart.html",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\project\\New folder\\cart.html",
+              "RelativeToolTip": "cart.html",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-20T15:39:44.662Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

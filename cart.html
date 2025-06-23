@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - BookHaven</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/header-style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">BookHaven</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"  target="_self">Home</a></li>
+                    <li><a href="books.html" target="_self">Books</a></li>
+                    <li><a href="publishers.html" target="_self">Publishers</a></li>
+                    <li><a href="events.html" target="_self">Events</a></li>
+                    <li><a href="bookclub.html" target="_self">Book Club</a></li>
+                    <li><a href="blog.html" target="_self">Blog</a></li>
+                    <li><a href="contact.html" target="_self">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a class="nav-login" href="login.html" class="btn login-btn">Login</a>
+                <a class="nav-register" href="register.html" class="btn register-btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator"><i class="fas fa-chevron-right"></i></span>
+                <span class="current">Shopping Cart</span>
+            </nav>
+
+            <h1 class="page-title">Your Shopping Cart</h1>
+
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <div class="header-item product">Product</div>
+                        <div class="header-item price">Price</div>
+                        <div class="header-item quantity">Quantity</div>
+                        <div class="header-item total">Total</div>
+                        <div class="header-item action">Action</div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-product">
+                            <div class="item-image">
+                                <img src="https://via.placeholder.com/80x120" alt="Book Cover">
+                            </div>
+                            <div class="item-details">
+                                <h3><a href="book-details.html">The Silent Echo</a></h3>
+                                <p class="author">by Emily Richards</p>
+                                <p class="format">Paperback</p>
+                            </div>
+                        </div>
+                        <div class="item-price">$14.99</div>
+                        <div class="item-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="item-total">$14.99</div>
+                        <div class="item-action">
+                            <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-product">
+                            <div class="item-image">
+                                <img src="img/discount-book-1.png" alt="Book Cover">
+                            </div>
+                            <div class="item-details">
+                                <h3><a href="book-details.html">Midnight Whispers</a></h3>
+                                <p class="author">by Jonathan Black</p>
+                                <p class="format">Hardcover</p>
+                            </div>
+                        </div>
+                        <div class="item-price">$22.99</div>
+                        <div class="item-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="2" min="1" class="quantity-input">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="item-total">$45.98</div>
+                        <div class="item-action">
+                            <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="cart-actions">
+                        <button class="btn continue-shopping">
+                            <i class="fas fa-arrow-left"></i> Continue Shopping
+                        </button>
+                        <button class="btn update-cart">Update Cart</button>
+                    </div>
+                </div>
+
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal (3 items)</span>
+                            <span>$60.97</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span>$4.27</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>$65.24</span>
+                        </div>
+                    </div>
+
+                    <div class="coupon-section">
+                        <h4>Have a coupon?</h4>
+                        <div class="coupon-input">
+                            <input type="text" placeholder="Enter coupon code">
+                            <button class="btn apply-btn">Apply</button>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-block checkout-btn">Proceed to Checkout</button>
+
+                    <div class="secure-checkout">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure checkout</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>BookHaven</h3>
+                    <p>Your ultimate destination for literature enthusiasts. Discover, connect, and explore the world of books.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="publishers.html">Publishers</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="bookclub.html">Book Club</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Language</h3>
+                    <select id="language-selector">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+<script src="js/header.js"></script>
+</body>
+</html>
+<script src="js/cart.js"></script>

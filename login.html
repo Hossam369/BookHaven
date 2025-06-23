@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BookHaven</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/header-style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">BookHaven</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="books.html" target="_self">Books</a></li>
+                    <li><a href="publishers.html" target="_self">Publishers</a></li>
+                    <li><a href="events.html" target="_self">Events</a></li>
+                    <li><a href="bookclub.html" target="_self">Book Club</a></li>
+                    <li><a href="blog.html" target="_self">Blog</a></li>
+                    <li><a href="contact.html" target="_self">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <h2>Login to Your Account</h2>
+                <div class="auth-methods">
+                    <button class="social-login google">
+                        <i class="fab fa-google"></i> Continue with Google
+                    </button>
+                    <button class="social-login facebook">
+                        <i class="fab fa-facebook-f"></i> Continue with Facebook
+                    </button>
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+                </div>
+                
+<form onsubmit="event.preventDefault(); loginUser(
+    document.getElementById('email').value,
+    document.getElementById('password').value
+)">
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button type="submit">Login</button>
+</form>
+
+                <p class="auth-switch">
+                    Don't have an account? <a class="nav-register" href="register.html">Sign up</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>BookHaven</h3>
+                    <p>Your ultimate destination for literature enthusiasts. Discover, connect, and explore the world of books.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="publishers.html">Publishers</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="bookclub.html">Book Club</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Language</h3>
+                    <select id="language-selector">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+<script src="js/header.js"></script>
+</body>
+</html>

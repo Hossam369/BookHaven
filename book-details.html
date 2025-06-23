@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - BookHaven</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/book-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/header-style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">BookHaven</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="books.html" target="_self">Books</a></li>
+                    <li><a href="publishers.html" target="_self">Publishers</a></li>
+                    <li><a href="events.html" target="_self">Events</a></li>
+                    <li><a href="bookclub.html" target="_self">Book Club</a></li>
+                    <li><a href="blog.html" target="_self">Blog</a></li>
+                    <li><a href="contact.html" target="_self">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a class="nav-login" href="login.html" class="btn login-btn">Login</a>
+                <a class="nav-register" href="register.html" class="btn register-btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="book-details">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator"><i class="fas fa-chevron-right"></i></span>
+                <a href="books.html">Books</a>
+                <span class="separator"><i class="fas fa-chevron-right"></i></span>
+                <span class="current">Book Details</span>
+            </nav>
+
+            <div id="book-details-container">
+                <!-- Book details will be loaded via JavaScript -->
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading book details...</p>
+                </div>
+            </div>
+
+            <div class="book-tabs">
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="details">Details</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews <span class="review-count">(12)</span></button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <p>A thrilling mystery that follows detective Sarah Miles as she uncovers secrets in a small town. When a prominent businessman is found dead under mysterious circumstances, Sarah must navigate through a web of lies, deceit, and small-town politics to uncover the truth.</p>
+                        <p>As Sarah delves deeper into the investigation, she discovers that the victim had connections to several powerful individuals in town, each with their own motives for wanting him dead. The further she investigates, the more dangerous her quest for truth becomes, as someone is determined to keep their secrets buried.</p>
+                        <p>Set against the backdrop of a picturesque coastal town with a dark underbelly, "The Silent Echo" explores themes of justice, redemption, and the lengths people will go to protect their interests.</p>
+                    </div>
+                    <div class="tab-pane" id="details">
+                        <div class="book-details-info">
+                            <div class="detail-item">
+                                <span class="detail-label">Publisher:</span>
+                                <span class="detail-value">Harbor Press</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Publication Date:</span>
+                                <span class="detail-value">March 15, 2025</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Language:</span>
+                                <span class="detail-value">English</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Paperback:</span>
+                                <span class="detail-value">342 pages</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">ISBN-10:</span>
+                                <span class="detail-value">1234567890</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">ISBN-13:</span>
+                                <span class="detail-value">978-1234567890</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Dimensions:</span>
+                                <span class="detail-value">5.5 x 0.8 x 8.5 inches</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="reviews">
+                        <div class="reviews-summary">
+                            <div class="rating-summary">
+                                <div class="average-rating">
+                                    <span class="rating-number">4.5</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="rating-count">12 reviews</span>
+                                </div>
+                                <div class="rating-bars">
+                                    <div class="rating-bar-item">
+                                        <span class="star-label">5 <i class="fas fa-star"></i></span>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 75%"></div>
+                                        </div>
+                                        <span class="rating-percent">75%</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="star-label">4 <i class="fas fa-star"></i></span>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 15%"></div>
+                                        </div>
+                                        <span class="rating-percent">15%</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="star-label">3 <i class="fas fa-star"></i></span>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 5%"></div>
+                                        </div>
+                                        <span class="rating-percent">5%</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="star-label">2 <i class="fas fa-star"></i></span>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 3%"></div>
+                                        </div>
+                                        <span class="rating-percent">3%</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="star-label">1 <i class="fas fa-star"></i></span>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 2%"></div>
+                                        </div>
+                                        <span class="rating-percent">2%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="write-review">
+                            <h3>Write a Review</h3>
+                            <form id="review-form">
+                                <div class="rating-select">
+                                    <span>Your Rating:</span>
+                                    <div class="star-rating">
+                                        <input type="radio" id="5-stars" name="rating" value="5">
+                                        <label for="5-stars" class="star"><i class="fas fa-star"></i></label>
+                                        <input type="radio" id="4-stars" name="rating" value="4">
+                                        <label for="4-stars" class="star"><i class="fas fa-star"></i></label>
+                                        <input type="radio" id="3-stars" name="rating" value="3">
+                                        <label for="3-stars" class="star"><i class="fas fa-star"></i></label>
+                                        <input type="radio" id="2-stars" name="rating" value="2">
+                                        <label for="2-stars" class="star"><i class="fas fa-star"></i></label>
+                                        <input type="radio" id="1-star" name="rating" value="1">
+                                        <label for="1-star" class="star"><i class="fas fa-star"></i></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-title">Review Title</label>
+                                    <input type="text" id="review-title" name="title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-content">Your Review</label>
+                                    <textarea id="review-content" name="content" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn">Submit Review</button>
+                            </form>
+                        </div>
+                        
+                        <div class="customer-reviews">
+                            <h3>Customer Reviews</h3>
+                            <div class="reviews-list">
+                                <div class="review-item">
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar">
+                                            <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Reviewer">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <h4>Jennifer L.</h4>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="review-date">May 2, 2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <h5>Absolutely Riveting!</h5>
+                                        <p>I couldn't put this book down. Emily Richards has crafted a masterful mystery with characters that feel incredibly real. The twist at the end was something I never saw coming. Highly recommend to any mystery lover!</p>
+                                    </div>
+                                </div>
+                                <div class="review-item">
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar">
+                                            <img src="https://randomuser.me/api/portraits/men/57.jpg" alt="Reviewer">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <h4>Robert T.</h4>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="review-date">April 18, 2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <h5>Great but Pacing Issues</h5>
+                                        <p>The story and characters are excellent, and the mystery kept me guessing. However, I felt the middle section dragged a bit, which is why I'm giving 4 stars instead of 5. Still a very enjoyable read overall.</p>
+                                    </div>
+                                </div>
+                                <div class="review-item">
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar">
+                                            <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="Reviewer">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <h4>Sarah M.</h4>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <span class="review-date">April 10, 2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <h5>My New Favorite Author</h5>
+                                        <p>Emily Richards has become my new favorite author after reading this book. The way she develops characters and builds tension is masterful. The small-town setting feels authentic and the mystery unfolds at a perfect pace. Can't wait for her next book!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-books">
+                <h2 class="section-title">You May Also Like</h2>
+                <div class="book-grid" id="related-books-container">
+                    <!-- Related books will be loaded via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>BookHaven</h3>
+                    <p>Your ultimate destination for literature enthusiasts. Discover, connect, and explore the world of books.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="publishers.html">Publishers</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="bookclub.html">Book Club</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Language</h3>
+                    <select id="language-selector">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/books.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize tabs
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons and panes
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabPanes.forEach(pane => pane.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding tab pane
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Initialize review form
+            const reviewForm = document.getElementById('review-form');
+            if (reviewForm) {
+                reviewForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form values
+                    const rating = document.querySelector('input[name="rating"]:checked')?.value;
+                    const title = document.getElementById('review-title').value;
+                    const content = document.getElementById('review-content').value;
+                    
+                    if (!rating) {
+                        showNotification('Please select a rating', 'error');
+                        return;
+                    }
+                    
+                    // In a real app, this would send the review to a server
+                    showNotification('Your review has been submitted. Thank you!', 'success');
+                    
+                    // Reset form
+                    this.reset();
+                });
+            }
+        });
+    </script>
+<script src="js/header.js"></script>
+</body>
+</html>

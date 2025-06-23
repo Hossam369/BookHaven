@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="styles/events.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="css/header-style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BookHaven</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="publishers.html">Publishers</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="bookclub.html">Book Club</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a class="nav-login" href="login.html" class="btn login-btn">Login</a>
+                <a class="nav-register" href="register.html" class="btn register-btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="upcoming-events">
+        <div class="container">
+            <h2 class="section-title">Author Events & Interviews</h2>
+            <div class="events-grid" id="events-container"></div>
+        </div>
+    </section>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>BookHaven</h3>
+                <p>Your ultimate destination for literature lovers. Discover, connect, and celebrate the joy of reading.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube" aria-label="YouTube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="publishers.html">Publishers</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="bookclub.html">Book Club</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Language</h3>
+                <div class="language-select-wrapper">
+                    <select id="language-selector">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <strong>BookHaven</strong>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/events.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadUpcomingEvents);
+    </script>
+<script src="js/header.js"></script>
+</body>
+</html>

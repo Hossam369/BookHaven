@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven - Book Fair & Literature</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/header-style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BookHaven</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active" target="_self">Home</a></li>
+                    <li><a href="books.html"target="_self">Books</a></li>
+                    <li><a href="publishers.html"target="_self">Publishers</a></li>
+                    <li><a href="events.html"target="_self">Events</a></li>
+                    <li><a href="bookclub.html"target="_self">Book Club</a></li>
+                    <li><a href="blog.html"target="_self">Blog</a></li>
+                    <li><a href="contact.html"target="_self">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a class="nav-login" href="login.html" class="btn login-btn">Login</a>
+                <a class="nav-register" href="register.html" class="btn register-btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Discover Your Next Favorite Book</h2>
+                <p>Explore thousands of books, connect with authors and readers alike.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search by book title, author, or ISBN">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-books">
+        <div class="container">
+            <h2 class="section-title">Featured Books</h2>
+            <div class="book-grid" id="featured-books-container">
+                <!-- Books will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-releases">
+        <div class="container">
+            <h2 class="section-title">Latest Releases</h2>
+            <div class="book-grid" id="latest-releases-container">
+                <!-- Books will be loaded via JavaScript -->
+            </div>
+            <div class="view-more">
+                <a href="latest-release.html" class="btn">View All Latest Releases</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Genre</h2>
+            <div class="category-grid">
+                <a href="category.html?genre=fiction" class="category-card">
+                    <div class="category-icon"><i class="fas fa-book"></i></div>
+                    <h3>Fiction</h3>
+                </a>
+                <a href="category.html?genre=nonfiction" class="category-card">
+                    <div class="category-icon"><i class="fas fa-landmark"></i></div>
+                    <h3>Non-Fiction</h3>
+                </a>
+                <a href="category.html?genre=mystery" class="category-card">
+                    <div class="category-icon"><i class="fas fa-magnifying-glass"></i></div>
+                    <h3>Mystery</h3>
+                </a>
+                <a href="category.html?genre=scifi" class="category-card">
+                    <div class="category-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Sci-Fi</h3>
+                </a>
+                <a href="category.html?genre=fantasy" class="category-card">
+                    <div class="category-icon"><i class="fas fa-dragon"></i></div>
+                    <h3>Fantasy</h3>
+                </a>
+                <a href="category.html?genre=romance" class="category-card">
+                    <div class="category-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Romance</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming-events">
+        <div class="container">
+            <h2 class="section-title">Author Events & Interviews</h2>
+            <div class="events-grid" id="events-container">
+                <!-- Events will be loaded via JavaScript -->
+            </div>
+            <div class="view-more">
+                <a href="events.html" class="btn">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with the latest releases, author interviews, and book recommendations.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>BookHaven</h3>
+                    <p>Your ultimate destination for literature enthusiasts. Discover, connect, and explore the world of books.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="publishers.html">Publishers</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="bookclub.html">Book Club</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Language</h3>
+                    <select id="language-selector">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/books.js"></script>
+<script src="js/header.js"></script>
+</body>
+</html>
